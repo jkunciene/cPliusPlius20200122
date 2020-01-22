@@ -14,7 +14,7 @@ void lyginu(vector<int> &A);
 
 int main()
 {
-    vector<int> M, Ap;
+    vector<int> M;
 
     skaitomPusinam(M);
     spausdink(M, "Nuskaite");
@@ -47,20 +47,21 @@ void lyginu(vector<int> &A){
         if(A[0]<A[1]){
                 A.erase(A.begin());
                 A[0]++;
-                cout<<A.size();
+
     }
     else if(A[0]>A[1]){
        A.erase(A.begin()+1);
                 A[0]++;
-                cout<<A.size();
+
+
     }
     else{
         A[0]*=2;
         A.erase(A.begin()+1);
 
     }
+spausdink(A, "test\n");
 
-    spausdink(A, "bandom\n");
 }
 
 }
